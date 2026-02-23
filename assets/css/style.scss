@@ -1,0 +1,6 @@
+@import "{{ site.theme }}";
+
+/* Hide the Cayman header completely */
+.page-header {
+  display: none !important;
+}
