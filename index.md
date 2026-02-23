@@ -17,7 +17,6 @@
     );
     z-index: 1;
   "></div>
-
   <!-- Text + Button Overlay -->
   <div style="
     position: absolute;
