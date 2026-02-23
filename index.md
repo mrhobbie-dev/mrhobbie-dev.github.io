@@ -6,13 +6,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3rem;
-    font-weight: 700;
     text-shadow: 0 0 10px rgba(0,0,0,0.7);
   ">
-    Strata Solutions One
+    <div style="font-size: 3rem; font-weight: 700;">
+      Strata Solutions One
+    </div>
+    <div style="font-size: 1.5rem; margin-top: 10px;">
+      Resident & Maintenance Tracking for Strata Councils
+    </div>
   </div>
 </div>
+
+<br>
 <br>
 *A modern resident and maintenance tracking system for strata councils.*
 
