@@ -51,12 +51,6 @@
 
 </div>
 
-<br>
-
-<br>
-
-<br>
-<br>
 *A modern resident and maintenance tracking system for strata councils.*
 
 ## A simple, reliable platform that helps councils stay organized, reduce email clutter, and manage day‑to‑day operations with clarity.
