@@ -1,6 +1,19 @@
-<img src="assets/hero.jpg" alt="Condo building" style="width:100%; margin-bottom:40px;">
+<div style="position: relative; text-align: center; color: white;">
+  <img src="assets/hero.jpg" alt="Condo building" style="width:100%; filter: brightness(60%);">
 
-# Strata Solutions One
+  <div style="
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  ">
+    Strata Solutions One
+  </div>
+</div>
+<br>
 *A modern resident and maintenance tracking system for strata councils.*
 
 A simple, reliable platform that helps councils stay organized, reduce email clutter, and manage day‑to‑day operations with clarity.
