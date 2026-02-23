@@ -1,7 +1,8 @@
 <div style="position: relative; text-align: center; color: white;">
 
   <!-- Hero Image -->
- <img src="assets/hero.jpg" alt="Condo building" style="width:100%; height: 450px; object-fit: cover;">
+  <img src="assets/hero.jpg" alt="Condo building" style="width:100%; height: 408px; object-fit: cover; filter: brightness(60%);">
+
 
   <!-- Gradient Overlay -->
   <div style="
@@ -14,15 +15,17 @@
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     );
+    z-index: 1;
   "></div>
 
-  <!-- Text Overlay -->
+  <!-- Text + Button Overlay -->
   <div style="
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 0 0 12px rgba(0,0,0,0.8);
+    z-index: 2;
   ">
     <div style="font-size: 3rem; font-weight: 700;">
       Strata Solutions One
@@ -30,9 +33,9 @@
     <div style="font-size: 1.5rem; margin-top: 10px;">
       Resident & Maintenance Tracking for Strata Councils
     </div>
-  </div>
+
     <div style="margin-top: 20px;">
-    <a href="#Overview" style="
+      <a href="#Overview" style="
         background-color: #2c8fdd;
         color: white;
         padding: 12px 24px;
@@ -40,12 +43,15 @@
         text-decoration: none;
         font-size: 1.1rem;
         font-weight: 600;
-    ">
+      ">
         View Features
-    </a>
+      </a>
     </div>
+  </div>
 
 </div>
+
+<br>
 
 <br>
 
