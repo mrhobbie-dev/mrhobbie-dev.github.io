@@ -1,22 +1,16 @@
-
-# 🌄 **Hero Section (Text Only for Now)**
-
-## **Strata Solutions One**  
+# Strata Solutions One
 *A modern resident and maintenance tracking system for strata councils.*
 
 A simple, reliable platform that helps councils stay organized, reduce email clutter, and manage day‑to‑day operations with clarity.
 
 ---
 
-# 📘 **Overview**
-
-Strata Solutions One is a streamlined activity and information management system designed specifically for strata councils. It centralizes resident details, maintenance workflows, forms, and building documentation into one clean, predictable interface.  
-No more scattered emails, missing forms, or lost project history — everything is organized, searchable, and easy to maintain.
+## Overview
+Strata Solutions One is a streamlined activity and information management system designed specifically for strata councils. It centralizes resident details, maintenance workflows, forms, and building documentation into one clean, predictable interface. No more scattered emails, missing forms, or lost project history — everything is organized, searchable, and easy to maintain.
 
 ---
 
-# 📝 **Forms**
-
+## Forms
 Your building’s most common resident requests, all standardized and tracked:
 
 - Move In / Move Out  
@@ -33,8 +27,7 @@ Each form is logged, timestamped, and available for council review at any time.
 
 ---
 
-# 🛠️ **Project Tracking**
-
+## Project Tracking
 Track building projects from start to finish with clear visibility:
 
 - Quotes and contractor proposals  
@@ -46,8 +39,7 @@ Everything stays organized and accessible, giving councils a reliable record of 
 
 ---
 
-# 📊 **Activity Tracking**
-
+## Activity Tracking
 A complete timeline of building activity:
 
 - Resident submissions  
@@ -60,8 +52,7 @@ This creates transparency, accountability, and a clear operational history.
 
 ---
 
-# 📄 **Document Management**
-
+## Document Management
 A centralized hub for your building’s important documents:
 
 - Bylaws  
@@ -74,22 +65,5 @@ Documents are easy to upload, categorize, and retrieve — no more digging throu
 
 ---
 
-# 🎯 **Call to Action (Optional)**
-
-If you want a closing line:
-
-> Built for clarity. Designed for councils.  
-> Strata Solutions One brings your building’s operations together in one simple system.
-
----
-
-# 👉 Next Step  
-If this feels like the right tone and structure, we can:
-
-- Refine any wording you want  
-- Add a short tagline under the hero title  
-- Insert the hero image  
-- Add spacing and visual hierarchy (Option C)  
-- Build out additional pages (Features, About, Contact)
-
-Just tell me what you’d like to adjust or expand.
+## Built for Clarity
+Strata Solutions One brings your building’s operations together in one simple system.
