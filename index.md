@@ -168,10 +168,6 @@
 // ------------------------------------------------------
 // 1. Screenshot sets (these go at the TOP of the script)
 // ------------------------------------------------------
-
-document.querySelectorAll('.ss1-accordion-header').forEach(header => {
-  header.addEventListener('click', () => {
-    const content = header.nextElementSibling;
     const ss1Screenshots = {
     residents: [
         "assets/screenshots/residents1.png",
@@ -204,40 +200,40 @@ document.querySelectorAll('.ss1-accordion-header').forEach(header => {
     function stopGalleryCycle(galleryKey) {
     // stop logic...
     }
-// ------------------------------------------------------
-// 3. Accordion behavior (this is the querySelectorAll loop)
-// ------------------------------------------------------
-// Accordion behavior + gallery triggers
-document.querySelectorAll('.ss1-accordion-header').forEach(header => {
-  header.addEventListener('click', () => {
-    const content = header.nextElementSibling;
-    const gallery = content.querySelector(".ss1-gallery");
-    const galleryKey = gallery ? gallery.dataset.gallery : null;
+    // ------------------------------------------------------
+    // 3. Accordion behavior (this is the querySelectorAll loop)
+    // ------------------------------------------------------
+    // Accordion behavior + gallery triggers
+    document.querySelectorAll('.ss1-accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        const gallery = content.querySelector(".ss1-gallery");
+        const galleryKey = gallery ? gallery.dataset.gallery : null;
 
-    // Close others
-    document.querySelectorAll('.ss1-accordion-content').forEach(c => {
-      if (c !== content) {
-        c.style.maxHeight = null;
-        c.classList.remove('open');
+        // Close others
+        document.querySelectorAll('.ss1-accordion-content').forEach(c => {
+        if (c !== content) {
+            c.style.maxHeight = null;
+            c.classList.remove('open');
 
-        // Stop gallery in closed sections
-        const g = c.querySelector(".ss1-gallery");
-        if (g) stopGalleryCycle(g.dataset.gallery);
-      }
+            // Stop gallery in closed sections
+            const g = c.querySelector(".ss1-gallery");
+            if (g) stopGalleryCycle(g.dataset.gallery);
+        }
+        });
+
+        // Toggle this one
+        if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+        content.classList.remove('open');
+        if (galleryKey) stopGalleryCycle(galleryKey);
+        } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        content.classList.add('open');
+        if (galleryKey) startGalleryCycle(gallery, galleryKey);
+        }
     });
-
-    // Toggle this one
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null;
-      content.classList.remove('open');
-      if (galleryKey) stopGalleryCycle(galleryKey);
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-      content.classList.add('open');
-      if (galleryKey) startGalleryCycle(gallery, galleryKey);
-    }
-  });
-});
+    });
 </script>
 
 </script>
