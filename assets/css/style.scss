@@ -119,10 +119,10 @@ html {
 .ss1-accordion-content.open {
   padding: 15px 0;
 }
-
-/* Gallery image inside accordion */
+/* Add a fade transition to the images */
 .ss1-gallery-img {
   width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: opacity 0.3s ease;
 }

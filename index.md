@@ -165,15 +165,64 @@
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 <script>
+// ------------------------------------------------------
+// 1. Screenshot sets (these go at the TOP of the script)
+// ------------------------------------------------------
+
 document.querySelectorAll('.ss1-accordion-header').forEach(header => {
   header.addEventListener('click', () => {
     const content = header.nextElementSibling;
+    const ss1Screenshots = {
+    residents: [
+        "assets/screenshots/residents1.png",
+        "assets/screenshots/residents2.png",
+        "assets/screenshots/residents3.png",
+        "assets/screenshots/residents4.png"
+    ],
+    maintenance: [
+        "assets/screenshots/maintenance1.png",
+        "assets/screenshots/maintenance2.png",
+        "assets/screenshots/maintenance3.png",
+        "assets/screenshots/maintenance4.png"
+    ],
+    activity: [
+        "assets/screenshots/activity1.png",
+        "assets/screenshots/activity2.png",
+        "assets/screenshots/activity3.png",
+        "assets/screenshots/activity4.png"
+    ]
+    };
+    // ------------------------------------------------------
+    // 2. Cycling logic (still OUTSIDE the accordion function)
+    // ------------------------------------------------------
+    const ss1Intervals = {};
+
+    function startGalleryCycle(galleryElement, galleryKey) {
+    // cycling logic...
+    }
+
+    function stopGalleryCycle(galleryKey) {
+    // stop logic...
+    }
+// ------------------------------------------------------
+// 3. Accordion behavior (this is the querySelectorAll loop)
+// ------------------------------------------------------
+// Accordion behavior + gallery triggers
+document.querySelectorAll('.ss1-accordion-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const content = header.nextElementSibling;
+    const gallery = content.querySelector(".ss1-gallery");
+    const galleryKey = gallery ? gallery.dataset.gallery : null;
 
     // Close others
     document.querySelectorAll('.ss1-accordion-content').forEach(c => {
       if (c !== content) {
         c.style.maxHeight = null;
         c.classList.remove('open');
+
+        // Stop gallery in closed sections
+        const g = c.querySelector(".ss1-gallery");
+        if (g) stopGalleryCycle(g.dataset.gallery);
       }
     });
 
@@ -181,11 +230,15 @@ document.querySelectorAll('.ss1-accordion-header').forEach(header => {
     if (content.style.maxHeight) {
       content.style.maxHeight = null;
       content.classList.remove('open');
+      if (galleryKey) stopGalleryCycle(galleryKey);
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
       content.classList.add('open');
+      if (galleryKey) startGalleryCycle(gallery, galleryKey);
     }
   });
 });
+</script>
+
 </script>
 
