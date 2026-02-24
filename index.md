@@ -122,3 +122,11 @@
 
   </div>
 </section>
+<footer style="text-align:center; padding: 20px; margin-top: 40px; color:#666;">
+  © <span id="year"></span> Strata Solutions One — Built for Strata Councils
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
