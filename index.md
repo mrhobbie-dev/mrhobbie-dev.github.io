@@ -3,7 +3,6 @@
   <!-- Hero Image -->
   <img src="assets/hero.jpg" alt="Condo building" style="width:100%; height: 408px; object-fit: cover; filter: brightness(60%);">
 
-
   <!-- Gradient Overlay -->
   <div style="
     position: absolute;
@@ -46,11 +45,13 @@
         View Features
       </a>
     </div>
+
   </div>
 
 </div>
 
 <a id="Overview"></a>
+
 <section style="padding: 40px 20px; max-width: 900px; margin: auto;">
   <h2 style="text-align:center;">Overview</h2>
   <p style="font-size: 1.2rem; line-height: 1.6;">
@@ -63,6 +64,7 @@
 ---
 
 <a id="Features"></a>
+
 <section style="padding: 40px 20px; max-width: 900px; margin: auto;">
   <h2 style="text-align:center;">Key Features</h2>
 
@@ -100,4 +102,23 @@
     <li>Modular workflows for predictable council processes</li>
     <li>Designed for clarity and maintainability</li>
   </ul>
+</section>
+<section style="padding: 40px 20px; max-width: 1000px; margin: auto;">
+  <h2 style="text-align:center;">Screenshots & Preview</h2>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px;">
+
+    <div style="width: 300px; height: 180px; background: #eaeaea; border-radius: 8px; display:flex; align-items:center; justify-content:center;">
+      <span style="color:#777;">Screenshot Placeholder</span>
+    </div>
+
+    <div style="width: 300px; height: 180px; background: #eaeaea; border-radius: 8px; display:flex; align-items:center; justify-content:center;">
+      <span style="color:#777;">Screenshot Placeholder</span>
+    </div>
+
+    <div style="width: 300px; height: 180px; background: #eaeaea; border-radius: 8px; display:flex; align-items:center; justify-content:center;">
+      <span style="color:#777;">Screenshot Placeholder</span>
+    </div>
+
+  </div>
 </section>
