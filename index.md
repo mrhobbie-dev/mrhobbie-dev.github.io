@@ -115,89 +115,44 @@
   </ul>
 </section>
 <a id="Screenshots"></a>
-<section style="padding: 40px 20px; max-width: 1100px; margin: auto;">
-  <h2 style="text-align:center;">Screenshots & Preview</h2>
-  <p style="text-align:center; font-size: 1.1rem; color:#555; max-width: 700px; margin: 10px auto 30px;">
-    A quick look at the clean, structured interface that makes Strata Solutions One easy to use for any council member.
+<section style="padding: 50px 20px; max-width: 900px; margin: auto;">
+  <h2 style="text-align:center;">Interactive Previews</h2>
+  <p style="text-align:center; font-size: 1.1rem; color:#555; margin-bottom: 30px;">
+    Expand a section to see a rotating preview of the interface.
   </p>
+  <!-- Accordion Container -->
+  <div class="ss1-accordion">
 
-  <div style="
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-  ">
-
-    <!-- Screenshot Card 1 -->
-    <div style="
-      background: #f5f5f5;
-      border-radius: 10px;
-      padding: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      text-align:center;
-    ">
-      <div style="
-        width: 100%;
-        height: 180px;
-        background: #e0e0e0;
-        border-radius: 8px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        color:#777;
-        font-size: 1rem;
-      ">
-        Resident Directory (Placeholder)
+    <!-- Accordion Item 1 -->
+    <div class="ss1-accordion-item">
+      <button class="ss1-accordion-header">Resident Management</button>
+      <div class="ss1-accordion-content">
+        <div class="ss1-gallery" data-gallery="residents">
+          <img src="assets/screenshots/placeholder1.png" alt="Resident Screenshot" class="ss1-gallery-img">
+        </div>
       </div>
-      <p style="margin-top: 10px; color:#555;">A clean, searchable list of owners and tenants.</p>
     </div>
 
-    <!-- Screenshot Card 2 -->
-    <div style="
-      background: #f5f5f5;
-      border-radius: 10px;
-      padding: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      text-align:center;
-    ">
-      <div style="
-        width: 100%;
-        height: 180px;
-        background: #e0e0e0;
-        border-radius: 8px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        color:#777;
-        font-size: 1rem;
-      ">
-        Maintenance Requests (Placeholder)
+    <!-- Accordion Item 2 -->
+    <div class="ss1-accordion-item">
+      <button class="ss1-accordion-header">Maintenance Requests</button>
+      <div class="ss1-accordion-content">
+        <div class="ss1-gallery" data-gallery="maintenance">
+          <img src="assets/screenshots/placeholder2.png" alt="Maintenance Screenshot" class="ss1-gallery-img">
+        </div>
       </div>
-      <p style="margin-top: 10px; color:#555;">Track issues, assign tasks, and monitor progress.</p>
     </div>
 
-    <!-- Screenshot Card 3 -->
-    <div style="
-      background: #f5f5f5;
-      border-radius: 10px;
-      padding: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      text-align:center;
-    ">
-      <div style="
-        width: 100%;
-        height: 180px;
-        background: #e0e0e0;
-        border-radius: 8px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        color:#777;
-        font-size: 1rem;
-      ">
-        Activity Log (Placeholder)
+    <!-- Accordion Item 3 -->
+    <div class="ss1-accordion-item">
+      <button class="ss1-accordion-header">Activity Log</button>
+      <div class="ss1-accordion-content">
+        <div class="ss1-gallery" data-gallery="activity">
+          <img src="assets/screenshots/placeholder3.png" alt="Activity Screenshot" class="ss1-gallery-img">
+        </div>
       </div>
-      <p style="margin-top: 10px; color:#555;">A transparent record of council actions and decisions.</p>
     </div>
+
   </div>
 </section>
 
@@ -208,5 +163,29 @@
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script>
+document.querySelectorAll('.ss1-accordion-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const content = header.nextElementSibling;
+
+    // Close others
+    document.querySelectorAll('.ss1-accordion-content').forEach(c => {
+      if (c !== content) {
+        c.style.maxHeight = null;
+        c.classList.remove('open');
+      }
+    });
+
+    // Toggle this one
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      content.classList.remove('open');
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      content.classList.add('open');
+    }
+  });
+});
 </script>
 

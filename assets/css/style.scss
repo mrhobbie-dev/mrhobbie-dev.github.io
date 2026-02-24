@@ -83,3 +83,46 @@ html {
     font-size: 0.95rem;
   }
 }
+/* Minimal Professional Accordion */
+.ss1-accordion {
+  width: 100%;
+}
+
+.ss1-accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.ss1-accordion-header {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 15px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.ss1-accordion-header:hover {
+  color: #007acc;
+}
+
+.ss1-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  padding-left: 5px;
+}
+
+.ss1-accordion-content.open {
+  padding: 15px 0;
+}
+
+/* Gallery image inside accordion */
+.ss1-gallery-img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
