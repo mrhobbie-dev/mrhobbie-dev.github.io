@@ -36,6 +36,12 @@ html {
   backdrop-filter: blur(6px);
   z-index: 999;
 }
+/* Force nav to span full width */
+.ss1-nav {
+  width: 100vw !important;
+  left: 0;
+  right: 0;
+}
 
 .ss1-nav-inner {
   max-width: 1100px;
