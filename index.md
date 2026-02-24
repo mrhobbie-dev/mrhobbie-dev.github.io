@@ -1,5 +1,16 @@
-<div style="position: relative; text-align: center; color: white;">
-
+<!-- Lightweight Custom Navigation -->
+<nav class="ss1-nav">
+  <div class="ss1-nav-inner">
+    <div class="ss1-logo">Strata Solutions One</div>
+    <div class="ss1-links">
+      <a href="#Overview">Overview</a>
+      <a href="#Features">Features</a>
+      <a href="#Screenshots">Screenshots</a>
+      <a href="#Contact">Contact</a>
+    </div>
+  </div>
+</nav>
+<div style="position: relative; text-align: center; color: white; padding-top: 60px;">
   <!-- Hero Image -->
   <img src="assets/hero.jpg" alt="Condo building" style="width:100%; height: 408px; object-fit: cover; filter: brightness(60%);">
 
@@ -103,6 +114,7 @@
     <li>Designed for clarity and maintainability</li>
   </ul>
 </section>
+<a id="Screenshots"></a>
 <section style="padding: 40px 20px; max-width: 1000px; margin: auto;">
   <h2 style="text-align:center;">Screenshots & Preview</h2>
 

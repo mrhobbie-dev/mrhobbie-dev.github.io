@@ -25,3 +25,55 @@ html {
     font-size: 1.1rem !important;
   }
 }
+
+/* Lightweight Floating Navigation Bar */
+.ss1-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 12px 0;
+  background: rgba(0, 0, 0, 0.35); /* subtle transparency */
+  backdrop-filter: blur(6px);
+  z-index: 999;
+}
+
+.ss1-nav-inner {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.ss1-logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.ss1-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.ss1-links a:hover {
+  opacity: 0.7;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .ss1-nav-inner {
+    flex-direction: column;
+  }
+  .ss1-links {
+    margin-top: 8px;
+  }
+  .ss1-links a {
+    margin-left: 12px;
+    font-size: 0.95rem;
+  }
+}
