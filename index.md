@@ -115,25 +115,93 @@
   </ul>
 </section>
 <a id="Screenshots"></a>
-<section style="padding: 40px 20px; max-width: 1000px; margin: auto;">
+<section style="padding: 40px 20px; max-width: 1100px; margin: auto;">
   <h2 style="text-align:center;">Screenshots & Preview</h2>
+  <p style="text-align:center; font-size: 1.1rem; color:#555; max-width: 700px; margin: 10px auto 30px;">
+    A quick look at the clean, structured interface that makes Strata Solutions One easy to use for any council member.
+  </p>
 
-  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px;">
+  <div style="
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+  ">
 
-    <div style="width: 300px; height: 180px; background: #eaeaea; border-radius: 8px; display:flex; align-items:center; justify-content:center;">
-      <span style="color:#777;">Screenshot Placeholder</span>
+    <!-- Screenshot Card 1 -->
+    <div style="
+      background: #f5f5f5;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      text-align:center;
+    ">
+      <div style="
+        width: 100%;
+        height: 180px;
+        background: #e0e0e0;
+        border-radius: 8px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:#777;
+        font-size: 1rem;
+      ">
+        Resident Directory (Placeholder)
+      </div>
+      <p style="margin-top: 10px; color:#555;">A clean, searchable list of owners and tenants.</p>
     </div>
 
-    <div style="width: 300px; height: 180px; background: #eaeaea; border-radius: 8px; display:flex; align-items:center; justify-content:center;">
-      <span style="color:#777;">Screenshot Placeholder</span>
+    <!-- Screenshot Card 2 -->
+    <div style="
+      background: #f5f5f5;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      text-align:center;
+    ">
+      <div style="
+        width: 100%;
+        height: 180px;
+        background: #e0e0e0;
+        border-radius: 8px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:#777;
+        font-size: 1rem;
+      ">
+        Maintenance Requests (Placeholder)
+      </div>
+      <p style="margin-top: 10px; color:#555;">Track issues, assign tasks, and monitor progress.</p>
     </div>
 
-    <div style="width: 300px; height: 180px; background: #eaeaea; border-radius: 8px; display:flex; align-items:center; justify-content:center;">
-      <span style="color:#777;">Screenshot Placeholder</span>
+    <!-- Screenshot Card 3 -->
+    <div style="
+      background: #f5f5f5;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      text-align:center;
+    ">
+      <div style="
+        width: 100%;
+        height: 180px;
+        background: #e0e0e0;
+        border-radius: 8px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:#777;
+        font-size: 1rem;
+      ">
+        Activity Log (Placeholder)
+      </div>
+      <p style="margin-top: 10px; color:#555;">A transparent record of council actions and decisions.</p>
     </div>
-
   </div>
 </section>
+
+
 <footer style="text-align:center; padding: 20px; margin-top: 40px; color:#666;">
   © <span id="year"></span> Strata Solutions One — Built for Strata Councils
 </footer>
