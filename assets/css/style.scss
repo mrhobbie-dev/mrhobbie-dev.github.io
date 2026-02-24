@@ -16,3 +16,12 @@
 html {
   scroll-behavior: smooth;
 }
+
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 2rem !important;
+  }
+  .hero-subtitle {
+    font-size: 1.1rem !important;
+  }
+}
