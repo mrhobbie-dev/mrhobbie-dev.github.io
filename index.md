@@ -1,3 +1,4 @@
+<div style="position: relative; text-align: center; color: white; padding-top: 60px;">
 <!-- Lightweight Custom Navigation -->
 <nav class="ss1-nav">
   <div class="ss1-nav-inner">
@@ -10,7 +11,6 @@
     </div>
   </div>
 </nav>
-<div style="position: relative; text-align: center; color: white; padding-top: 60px;">
   <!-- Hero Image -->
   <img src="assets/hero.jpg" alt="Condo building" style="width:100%; height: 408px; object-fit: cover; filter: brightness(60%);">
 
