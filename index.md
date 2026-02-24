@@ -50,75 +50,54 @@
 
 </div>
 
-*A modern resident and maintenance tracking system for strata councils.*
-
-## A simple, reliable platform that helps councils stay organized, reduce email clutter, and manage day‑to‑day operations with clarity.
-
-## Overview
-
-Strata Solutions One is a streamlined activity and information management system designed specifically for strata councils. It centralizes resident details, maintenance workflows, forms, and building documentation into one clean, predictable interface. No more scattered emails, missing forms, or lost project history — everything is organized, searchable, and easy to maintain.
-
+<a id="Overview"></a>
+<section style="padding: 40px 20px; max-width: 900px; margin: auto;">
+  <h2 style="text-align:center;">Overview</h2>
+  <p style="font-size: 1.2rem; line-height: 1.6;">
+    Strata Solutions One is a modern, modular web application designed for strata councils
+    who want a simple, reliable way to manage residents, maintenance requests, activity logs,
+    and essential documents. Built for clarity and ease of use, it helps councils stay organized,
+    accountable, and efficient.
+  </p>
+</section>
 ---
 
-## Forms
+<a id="Features"></a>
+<section style="padding: 40px 20px; max-width: 900px; margin: auto;">
+  <h2 style="text-align:center;">Key Features</h2>
 
-Your building’s most common resident requests, all standardized and tracked:
+  <h3>Resident Management</h3>
+  <ul>
+    <li>Track owners, tenants, and unit details</li>
+    <li>Record move-ins, move-outs, and contact updates</li>
+    <li>Centralized resident directory for council members</li>
+  </ul>
 
-- Move In / Move Out
-- Key FOB Requests
-- Enterphone Updates
-- Visitor Parking
-- Renovation Requests
-- EV Charging Requests
-- Form K Tenancy
-- AGM Proxy
-- Large Item Delivery
+  <h3>Maintenance Requests</h3>
+  <ul>
+    <li>Submit, track, and update maintenance issues</li>
+    <li>Assign tasks and monitor progress</li>
+    <li>Maintain a full history of completed work</li>
+  </ul>
 
-Each form is logged, timestamped, and available for council review at any time.
+  <h3>Activity Tracking</h3>
+  <ul>
+    <li>Log council activities and decisions</li>
+    <li>Track follow-ups and deadlines</li>
+    <li>Maintain a transparent record for future councils</li>
+  </ul>
 
----
+  <h3>Document Management</h3>
+  <ul>
+    <li>Store bylaws, minutes, forms, and notices</li>
+    <li>Organize documents by category</li>
+    <li>Provide easy access for council members</li>
+  </ul>
 
-## Project Tracking
-
-Track building projects from start to finish with clear visibility:
-
-- Quotes and contractor proposals
-- Approved work and scheduled maintenance
-- Invoices and cost tracking
-- Task progress and completion history
-
-Everything stays organized and accessible, giving councils a reliable record of past and ongoing work.
-
----
-
-## Activity Tracking
-
-A complete timeline of building activity:
-
-- Resident submissions
-- Administrative updates
-- Maintenance events
-- Council actions
-- Follow‑ups and resolutions
-
-This creates transparency, accountability, and a clear operational history.
-
----
-
-## Document Management
-
-A centralized hub for your building’s important documents:
-
-- Bylaws
-- Council minutes
-- AGM minutes
-- Announcements
-- Owner and resident information
-
-Documents are easy to upload, categorize, and retrieve — no more digging through email threads or shared drives.
-
----
-
-## Built for Clarity
-
-Strata Solutions One brings your building’s operations together in one simple system.
+  <h3>Forms & Workflows</h3>
+  <ul>
+    <li>Standardized forms for consistent data entry</li>
+    <li>Modular workflows for predictable council processes</li>
+    <li>Designed for clarity and maintainability</li>
+  </ul>
+</section>
