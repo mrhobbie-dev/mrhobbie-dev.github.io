@@ -125,7 +125,8 @@
 
     <!-- Accordion Item 1 -->
     <div class="ss1-accordion-item">
-      <button class="ss1-accordion-header">Resident Management</button>
+      <button class="ss1-accordion-header" data-section="residents">
+    Resident Management</button>
       <div class="ss1-accordion-content">
         <div class="ss1-gallery" data-gallery="residents">
           <img src="assets/screenshots/placeholder1.png" alt="Resident Screenshot" class="ss1-gallery-img">
