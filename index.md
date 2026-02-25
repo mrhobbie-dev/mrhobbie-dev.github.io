@@ -166,12 +166,12 @@
 </script>
 <script>
 // ------------------------------------------------------
-// 1. Screenshot sets (these go at the TOP of the script)
+// 1. Screenshot sets (TOP OF SCRIPT)
 // ------------------------------------------------------
-    const ss1Screenshots = {
+const ss1Screenshots = {
     residents: [
-        "./assets/screenshots/residents1.png",
-        "./assets/screenshots/residents2.png",
+        "assets/screenshots/residents1.png",
+        "assets/screenshots/residents2.png",
         "assets/screenshots/residents3.png",
         "assets/screenshots/residents4.png"
     ],
@@ -187,24 +187,61 @@
         "assets/screenshots/activity3.png",
         "assets/screenshots/activity4.png"
     ]
-    };
-    // ------------------------------------------------------
-    // 2. Cycling logic (still OUTSIDE the accordion function)
-    // ------------------------------------------------------
-    const ss1Intervals = {};
+};
 
-    function startGalleryCycle(galleryElement, galleryKey) {
-    // cycling logic...
-    }
+// ------------------------------------------------------
+// 2. Gallery builder + cycling logic
+// ------------------------------------------------------
+const ss1Intervals = {};
 
-    function stopGalleryCycle(galleryKey) {
-    // stop logic...
+function buildGallery(sectionKey) {
+    const galleryElement = document.querySelector(`#${sectionKey}-gallery`);
+    const images = ss1Screenshots[sectionKey];
+
+    galleryElement.innerHTML = ""; // clear existing
+
+    images.forEach(src => {
+        const img = document.createElement("img");
+        img.src = src;
+        img.classList.add("gallery-image");
+        img.style.opacity = "0";
+        galleryElement.appendChild(img);
+    });
+}
+
+function startGalleryCycle(galleryElement, galleryKey) {
+    const images = galleryElement.querySelectorAll(".gallery-image");
+    if (images.length === 0) return;
+
+    let index = 0;
+
+    images.forEach((img, i) => {
+        img.style.opacity = i === 0 ? "1" : "0";
+    });
+
+    stopGalleryCycle(galleryKey);
+
+    ss1Intervals[galleryKey] = setInterval(() => {
+        const nextIndex = (index + 1) % images.length;
+
+        images[index].style.opacity = "0";
+        images[nextIndex].style.opacity = "1";
+
+        index = nextIndex;
+    }, 3000);
+}
+
+function stopGalleryCycle(galleryKey) {
+    if (ss1Intervals[galleryKey]) {
+        clearInterval(ss1Intervals[galleryKey]);
+        delete ss1Intervals[galleryKey];
     }
-    // ------------------------------------------------------
-    // 3. Accordion behavior (this is the querySelectorAll loop)
-    // ------------------------------------------------------
-    // Accordion behavior + gallery triggers
-    document.querySelectorAll('.ss1-accordion-header').forEach(header => {
+}
+
+// ------------------------------------------------------
+// 3. Accordion behavior
+// ------------------------------------------------------
+document.querySelectorAll('.ss1-accordion-header').forEach(header => {
     header.addEventListener('click', () => {
         const content = header.nextElementSibling;
         const gallery = content.querySelector(".ss1-gallery");
@@ -212,29 +249,29 @@
 
         // Close others
         document.querySelectorAll('.ss1-accordion-content').forEach(c => {
-        if (c !== content) {
-            c.style.maxHeight = null;
-            c.classList.remove('open');
+            if (c !== content) {
+                c.style.maxHeight = null;
+                c.classList.remove('open');
 
-            // Stop gallery in closed sections
-            const g = c.querySelector(".ss1-gallery");
-            if (g) stopGalleryCycle(g.dataset.gallery);
-        }
+                const g = c.querySelector(".ss1-gallery");
+                if (g) stopGalleryCycle(g.dataset.gallery);
+            }
         });
 
         // Toggle this one
         if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-        content.classList.remove('open');
-        if (galleryKey) stopGalleryCycle(galleryKey);
+            content.style.maxHeight = null;
+            content.classList.remove('open');
+            if (galleryKey) stopGalleryCycle(galleryKey);
         } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-        content.classList.add('open');
-        if (galleryKey) startGalleryCycle(gallery, galleryKey);
+            content.style.maxHeight = content.scrollHeight + "px";
+            content.classList.add('open');
+
+            if (galleryKey) {
+                buildGallery(galleryKey);
+                startGalleryCycle(gallery, galleryKey);
+            }
         }
     });
-    });
+});
 </script>
-
-</script>
-
