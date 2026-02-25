@@ -173,8 +173,8 @@ const ss1Screenshots = {
     residents: [
         "./assets/screenshots/residents1.png",
         "./assets/screenshots/residents2.png",
-        "assets/screenshots/residents3.png",
-        "assets/screenshots/residents4.png"
+        "./assets/screenshots/residents3.png",
+        "./assets/screenshots/residents4.png"
     ],
     maintenance: [
         "assets/screenshots/maintenance1.png",
