@@ -10,6 +10,7 @@
     </div>
   </div>
 </nav>
+<br>
 <div class="hero-wrapper" style="position: relative; text-align: center; color: white; padding-top: 60px;">
   <!-- Hero Image -->
   <img src="./assets/hero.jpg" alt="Condo building" style="width:100%; height: 408px; object-fit: cover; filter: brightness(60%);">
@@ -186,6 +187,7 @@
       </div>
   </div>
 </section>
+<a id="Contact"></a>
 <section id="contact" class="contact-section">
   <h2>Contact</h2>
   <p>If you’d like to find out more about Strata Solutions One, request a demo, or connect about development work, I’d be happy to hear from you.</p>
