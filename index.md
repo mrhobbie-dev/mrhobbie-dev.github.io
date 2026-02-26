@@ -1,3 +1,4 @@
+<link href="./assets/ssLogo.png" rel="icon" type="image/png">
 <!-- Lightweight Custom Navigation -->
 <nav class="ss1-nav">
   <div class="ss1-nav-inner">
@@ -43,9 +44,8 @@
     <div style="font-size: 1.5rem; margin-top: 10px;">
       Resident & Maintenance Tracking for Strata Councils
     </div>
-
     <div style="margin-top: 20px;">
-      <a href="#Overview" style="
+      <a href="#Features" style="
         background-color: #2c8fdd;
         color: white;
         padding: 12px 24px;
@@ -57,13 +57,9 @@
         View Features
       </a>
     </div>
-
   </div>
-
 </div>
-
 <a id="Overview"></a>
-
 <section style="padding: 40px 20px; max-width: 900px; margin: auto;">
   <h2 style="text-align:center;">Overview</h2>
   <p style="font-size: 1.2rem; line-height: 1.6;">
@@ -76,7 +72,6 @@
 ---
 
 <a id="Features"></a>
-
 <section style="padding: 40px 20px; max-width: 900px; margin: auto;">
   <h2 style="text-align:center;">Key Features</h2>
 
