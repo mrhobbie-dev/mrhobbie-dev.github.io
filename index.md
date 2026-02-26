@@ -12,7 +12,7 @@
 </nav>
 <div class="hero-wrapper" style="position: relative; text-align: center; color: white; padding-top: 60px;">
   <!-- Hero Image -->
-  <img src="assets/hero.jpg" alt="Condo building" style="width:100%; height: 408px; object-fit: cover; filter: brightness(60%);">
+  <img src="./assets/hero.jpg" alt="Condo building" style="width:100%; height: 408px; object-fit: cover; filter: brightness(60%);">
 
   <!-- Gradient Overlay -->
   <div style="
@@ -79,40 +79,47 @@
 <section style="padding: 40px 20px; max-width: 900px; margin: auto;">
   <h2 style="text-align:center;">Key Features</h2>
 
-  <h3>Resident Management</h3>
-  <ul>
-    <li>Track owners, tenants, and unit details</li>
-    <li>Record move-ins, move-outs, and contact updates</li>
-    <li>Centralized resident directory for council members</li>
-  </ul>
+<h3>Resident Management</h3>
+<ul>
+  <li>Maintain accurate records for owners, tenants, and unit details</li>
+  <li>Log move‑ins, move‑outs, and contact changes in a structured workflow</li>
+  <li>Offer council members a centralized, easy‑to‑navigate resident directory</li>
+  <li>Automatically validate form submissions using up‑to‑date owner information</li>
+</ul>
 
-  <h3>Maintenance Requests</h3>
+<h3>Project Tracking</h3>
+<ul>
+  <li>Stay informed with clear visibility into major project progress</li>
+  <li>Organize and compare vendor quotes for transparent decision‑making</li>
+  <li>Track expenses using uploaded invoices and cost documentation</li>
+  <li>Centralize related files, including contracts, photos, and project plans</li>
+</ul>
+
+  <h3>Activity & Maintenance Tracking</h3>
   <ul>
     <li>Submit, track, and update maintenance issues</li>
     <li>Assign tasks and monitor progress</li>
     <li>Maintain a full history of completed work</li>
-  </ul>
-
-  <h3>Activity Tracking</h3>
-  <ul>
-    <li>Log council activities and decisions</li>
     <li>Track follow-ups and deadlines</li>
-    <li>Maintain a transparent record for future councils</li>
+    <li>A transparent record for future councils</li>
   </ul>
 
-  <h3>Document Management</h3>
-  <ul>
-    <li>Store bylaws, minutes, forms, and notices</li>
-    <li>Organize documents by category</li>
-    <li>Provide easy access for council members</li>
-  </ul>
+<h3>Document Management</h3>
+<ul>
+  <li>Store bylaws, meeting minutes, notices, and other key documents</li>
+  <li>Organize files by category for quick, intuitive access</li>
+  <li>Ensure council members can easily find the information they need</li>
+  <li>Configure site pages to always display the latest document version</li>
+</ul>
 
-  <h3>Forms & Workflows</h3>
-  <ul>
-    <li>Standardized forms for consistent data entry</li>
-    <li>Modular workflows for predictable council processes</li>
-    <li>Designed for clarity and maintainability</li>
-  </ul>
+<h3>Forms & Workflows</h3>
+<ul>
+  <li>Consistent, structured forms for reliable data collection</li>
+  <li>Modular workflows that streamline and standardize council processes</li>
+  <li>Built for clarity, maintainability, and future growth</li>
+  <li>Automatic email confirmations keep everyone informed</li>
+  <li>Full audit history for every form submission</li>
+</ul>
 </section>
 <a id="Screenshots"></a>
 <section style="padding: 50px 20px; max-width: 900px; margin: auto;">
@@ -133,30 +140,61 @@
           </div>
         </div>
       </div>
-
-    <!-- Accordion Item 2 -->
-    <div class="ss1-accordion-item">
-      <button class="ss1-accordion-header">Maintenance Requests</button>
-      <div class="ss1-accordion-content">
-        <div class="ss1-gallery" data-gallery="maintenance">
-          <img src="assets/screenshots/placeholder2.png" alt="Maintenance Screenshot" class="ss1-gallery-img">
+      <!-- Accordion Item 2 -->
+      <div class="ss1-accordion-item">
+        <button class="ss1-accordion-header" data-section="projects">
+          Project Tracking
+        </button>
+        <div class="ss1-accordion-content">
+          <div class="ss1-gallery" id="projects-gallery" data-gallery="projects">
+            <!-- This placeholder will be replaced by buildGallery() -->
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- Accordion Item 3 -->
-    <div class="ss1-accordion-item">
-      <button class="ss1-accordion-header">Activity Log</button>
-      <div class="ss1-accordion-content">
-        <div class="ss1-gallery" data-gallery="activity">
-          <img src="assets/screenshots/placeholder3.png" alt="Activity Screenshot" class="ss1-gallery-img">
+      <!-- Accordion Item 3 -->
+      <div class="ss1-accordion-item">
+        <button class="ss1-accordion-header" data-section="activity">
+          Activity & Maintenance Tracking
+        </button>
+        <div class="ss1-accordion-content">
+          <div class="ss1-gallery" id="activity-gallery" data-gallery="activity">
+            <!-- This placeholder will be replaced by buildGallery() -->
+          </div>
         </div>
       </div>
-    </div>
-
+      <!-- Accordion Item 4 -->
+      <div class="ss1-accordion-item">
+        <button class="ss1-accordion-header" data-section="documents">
+          Document Management
+        </button>
+        <div class="ss1-accordion-content">
+          <div class="ss1-gallery" id="documents-gallery" data-gallery="documents">
+            <!-- This placeholder will be replaced by buildGallery() -->
+          </div>
+        </div>
+      </div>
+      <!-- Accordion Item 5 -->
+      <div class="ss1-accordion-item">
+        <button class="ss1-accordion-header" data-section="forms">
+          Forms & Workflows
+        </button>
+        <div class="ss1-accordion-content">
+          <div class="ss1-gallery" id="forms-gallery" data-gallery="forms">
+            <!-- This placeholder will be replaced by buildGallery() -->
+          </div>
+        </div>
+      </div>
   </div>
 </section>
+<section id="contact" class="contact-section">
+  <h2>Contact</h2>
+  <p>If you’d like to find out more about Strata Solutions One, request a demo, or connect about development work, I’d be happy to hear from you.</p>
 
+  <p class="contact-email">
+    <strong>Email:</strong>
+    <a href="mailto:info@stratasolutions.one">info@stratasolutions.one</a>
+  </p>
+</section>
 
 <footer style="text-align:center; padding: 20px; margin-top: 40px; color:#666;">
   © <span id="year"></span> Strata Solutions One — Built for Strata Councils
@@ -178,17 +216,29 @@ const ss1Screenshots = {
         "./assets/screenshots/residents5.png",
         "./assets/screenshots/residents6.png"
     ],
-    maintenance: [
-        "assets/screenshots/maintenance1.png",
-        "assets/screenshots/maintenance2.png",
-        "assets/screenshots/maintenance3.png",
-        "assets/screenshots/maintenance4.png"
+    projects: [
+        "./assets/screenshots/projects1.png",
+        "./assets/screenshots/projects2.png",
+        "./assets/screenshots/projects3.png",
+        "./assets/screenshots/projects4.png"
     ],
     activity: [
-        "assets/screenshots/activity1.png",
-        "assets/screenshots/activity2.png",
-        "assets/screenshots/activity3.png",
-        "assets/screenshots/activity4.png"
+        "./assets/screenshots/activity1.png",
+        "./assets/screenshots/activity2.png",
+        "./assets/screenshots/activity3.png",
+        "./assets/screenshots/activity4.png"
+    ]
+      documents: [
+      "./assets/screenshots/documents1.png",
+      "./assets/screenshots/documents2.png",
+      "./assets/screenshots/documents3.png",
+      "./assets/screenshots/documents4.png"
+    ]
+      forms: [
+      "./assets/screenshots/forms1.png",
+      "./assets/screenshots/forms2.png",
+      "./assets/screenshots/forms3.png",
+      "./assets/screenshots/forms4.png"
     ]
 };
 

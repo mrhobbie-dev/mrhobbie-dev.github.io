@@ -143,3 +143,21 @@ html {
     object-position: top center; /* <-- THIS is the key */
     transition: opacity 0.6s ease-in-out;
 }
+/* contact section */
+.contact-section {
+  margin-top: 40px;
+  padding: 20px 0;
+}
+
+.contact-section h2 {
+  margin-bottom: 10px;
+}
+
+.contact-email a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.contact-email a:hover {
+  text-decoration: underline;
+}
