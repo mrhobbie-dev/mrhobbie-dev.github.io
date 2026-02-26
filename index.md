@@ -227,13 +227,13 @@ const ss1Screenshots = {
         "./assets/screenshots/activity2.png",
         "./assets/screenshots/activity3.png",
         "./assets/screenshots/activity4.png"
-    ]
+    ],
       documents: [
       "./assets/screenshots/documents1.png",
       "./assets/screenshots/documents2.png",
       "./assets/screenshots/documents3.png",
       "./assets/screenshots/documents4.png"
-    ]
+    ],
       forms: [
       "./assets/screenshots/forms1.png",
       "./assets/screenshots/forms2.png",
