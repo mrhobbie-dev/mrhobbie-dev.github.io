@@ -1,4 +1,3 @@
-<link href="./assets/ssLogo.png" rel="icon" type="image/png">
 <!-- Lightweight Custom Navigation -->
 <nav class="ss1-nav">
   <div class="ss1-nav-inner">
@@ -11,8 +10,7 @@
     </div>
   </div>
 </nav>
-<br>
-<div class="hero-wrapper" style="position: relative; text-align: center; color: white; padding-top: 60px;">
+<div class="hero-wrapper" style="position: relative; text-align: center; color: white; padding-top: 10px;">
   <!-- Hero Image -->
   <img src="./assets/hero.jpg" alt="Condo building" style="width:100%; height: 408px; object-fit: cover; filter: brightness(60%);">
 
@@ -221,21 +219,16 @@ const ss1Screenshots = {
     ],
     activity: [
         "./assets/screenshots/activity1.png",
-        "./assets/screenshots/activity2.png",
-        "./assets/screenshots/activity3.png",
-        "./assets/screenshots/activity4.png"
+        "./assets/screenshots/activity2.png"
     ],
       documents: [
       "./assets/screenshots/documents1.png",
       "./assets/screenshots/documents2.png",
-      "./assets/screenshots/documents3.png",
-      "./assets/screenshots/documents4.png"
+      "./assets/screenshots/documents3.png"
     ],
       forms: [
       "./assets/screenshots/forms1.png",
-      "./assets/screenshots/forms2.png",
-      "./assets/screenshots/forms3.png",
-      "./assets/screenshots/forms4.png"
+      "./assets/screenshots/forms2.png"
     ]
 };
 
