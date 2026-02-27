@@ -1,3 +1,5 @@
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <!-- Lightweight Custom Navigation -->
 <nav class="ss1-nav">
   <div class="ss1-nav-inner">
@@ -158,14 +160,20 @@
       </div>
     </div>
     <!-- Accordion Item 2 -->
-    <div class="ss1-accordion-item">
-      <button class="ss1-accordion-header" data-section="projects">Project Tracking</button>
-      <div class="ss1-accordion-content">
-        <div class="ss1-gallery" id="projects-gallery" data-gallery="projects">
-          <!-- This placeholder will be replaced by buildGallery() -->
-        </div>
-      </div>
+<div class="ss1-accordion-item">
+  <button class="ss1-accordion-header" data-section="projects">
+    Project Tracking
+  </button>
+
+  <div class="ss1-accordion-content">
+    <div class="screenshot-grid">
+      <img src="img/projects1.jpg" class="thumb" onclick="openModal(this.src)">
+      <img src="img/projects2.jpg" class="thumb" onclick="openModal(this.src)">
+      <img src="img/projects3.jpg" class="thumb" onclick="openModal(this.src)">
+      <img src="img/projects4.jpg" class="thumb" onclick="openModal(this.src)">
     </div>
+  </div>
+</div>
     <!-- Accordion Item 3 -->
     <div class="ss1-accordion-item">
       <button class="ss1-accordion-header" data-section="activity">
