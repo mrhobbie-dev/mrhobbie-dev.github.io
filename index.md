@@ -12,6 +12,7 @@
     </div>
   </div>
 </nav>
+<br>
 <div
   class="hero-wrapper"
   style="position: relative; text-align: center; color: white; padding-top: 10px"
@@ -140,8 +141,8 @@
 
 <section style="padding: 50px 20px; max-width: 900px; margin: auto">
   <h2 style="text-align: center">Interactive Previews</h2>
-  <p style="text-align: center; font-size: 1.1rem; color: #555; margin-bottom: 30px">
-    Expand a section to see a rotating preview of the interface.
+  <p style="text-align: center; font-size: 1.5rem; color: #555; margin-bottom: 30px">
+    Expand a section to see a rotating preview of the interface. Click on the image to enlarge.
   </p>
   <!-- Accordion Container -->
   <div class="ss1-accordion">
@@ -180,27 +181,36 @@
         Activity & Maintenance Tracking
       </button>
       <div class="ss1-accordion-content">
-        <div class="ss1-gallery" id="activity-gallery" data-gallery="activity">
-          <!-- This placeholder will be replaced by buildGallery() -->
-        </div>
+    <div class="screenshot-grid">
+      <img src="./assets/screenshots/projects1.png" class="thumb" onclick="openModal(this.src)">
+      <img src="./assets/screenshots/projects2.png" class="thumb" onclick="openModal(this.src)">
+      <!--<img src="img/projects3.jpg" class="thumb" onclick="openModal(this.src)">
+      <img src="img/projects4.jpg" class="thumb" onclick="openModal(this.src)">-->
+    </div>
       </div>
     </div>
     <!-- Accordion Item 4 -->
     <div class="ss1-accordion-item">
       <button class="ss1-accordion-header" data-section="documents">Document Management</button>
       <div class="ss1-accordion-content">
-        <div class="ss1-gallery" id="documents-gallery" data-gallery="documents">
-          <!-- This placeholder will be replaced by buildGallery() -->
-        </div>
+    <div class="screenshot-grid">
+      <img src="./assets/screenshots/activity1.png" class="thumb" onclick="openModal(this.src)">
+      <img src="./assets/screenshots/activity2.png" class="thumb" onclick="openModal(this.src)">
+      <!--<img src="img/projects3.jpg" class="thumb" onclick="openModal(this.src)">
+      <img src="img/projects4.jpg" class="thumb" onclick="openModal(this.src)">-->
+    </div>
       </div>
     </div>
     <!-- Accordion Item 5 -->
     <div class="ss1-accordion-item">
       <button class="ss1-accordion-header" data-section="forms">Forms & Workflows</button>
       <div class="ss1-accordion-content">
-        <div class="ss1-gallery" id="forms-gallery" data-gallery="forms">
-          <!-- This placeholder will be replaced by buildGallery() -->
-        </div>
+    <div class="screenshot-grid">
+      <img src="./assets/screenshots/projects1.png" class="thumb" onclick="openModal(this.src)">
+      <img src="./assets/screenshots/projects2.png" class="thumb" onclick="openModal(this.src)">
+      <!--<img src="img/projects3.jpg" class="thumb" onclick="openModal(this.src)">
+      <img src="img/projects4.jpg" class="thumb" onclick="openModal(this.src)">-->
+    </div>
       </div>
     </div>
   </div>
