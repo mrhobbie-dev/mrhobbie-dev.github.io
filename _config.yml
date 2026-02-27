@@ -1,4 +1,5 @@
 theme: jekyll-theme-cayman
-title: ""
-description: ""
-show_downloads: false
+title: Strata Solutions One
+description: Resident & Maintenance Tracking for Strata Councils
+url: https://stratasolutions.one
+image: /assets/social-preview.png

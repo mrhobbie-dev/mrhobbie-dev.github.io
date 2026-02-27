@@ -1,5 +1,3 @@
-<link rel="icon" href="/favicon.ico">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <!-- Lightweight Custom Navigation -->
 <nav class="ss1-nav">
   <div class="ss1-nav-inner">
