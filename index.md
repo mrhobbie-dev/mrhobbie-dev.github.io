@@ -70,6 +70,7 @@
 ---
 
 <a id="Features"></a>
+
 <section style="padding: 40px 20px; max-width: 900px; margin: auto;">
   <h2 style="text-align:center;">Key Features</h2>
 
@@ -199,122 +200,121 @@
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 <script>
-// ------------------------------------------------------
-// 1. Screenshot sets (TOP OF SCRIPT)
-// ------------------------------------------------------
-const ss1Screenshots = {
-    residents: [
-        "./assets/screenshots/residents1.png",
-        "./assets/screenshots/residents2.png",
-        "./assets/screenshots/residents3.png",
-        "./assets/screenshots/residents4.png",
-        "./assets/screenshots/residents5.png",
-        "./assets/screenshots/residents6.png"
-    ],
-    projects: [
-        "./assets/screenshots/projects1.png",
-        "./assets/screenshots/projects2.png",
-        "./assets/screenshots/projects3.png",
-        "./assets/screenshots/projects4.png"
-    ],
-    activity: [
-        "./assets/screenshots/activity1.png",
-        "./assets/screenshots/activity2.png"
-    ],
-      documents: [
-      "./assets/screenshots/documents1.png",
-      "./assets/screenshots/documents2.png",
-      "./assets/screenshots/documents3.png"
-    ],
-      forms: [
-      "./assets/screenshots/forms1.png",
-      "./assets/screenshots/forms2.png"
-    ]
-};
+      // Gallery image hover
+      $(".img-wrapper").hover(
+        function () {
+          $(this).find(".img-overlay").animate({ opacity: 1 }, 600);
+        },
+        function () {
+          $(this).find(".img-overlay").animate({ opacity: 0 }, 600);
+        },
+      );
 
-// ------------------------------------------------------
-// 2. Gallery builder + cycling logic
-// ------------------------------------------------------
-const ss1Intervals = {};
+      // Lightbox
+      var $overlay = $('<div id="overlay"></div>');
+      var $image = $("<img>");
+      var $prevButton = $(
+        '<div id="prevButton"><i class="fa fa-chevron-left"></i></div>',
+      );
+      var $nextButton = $(
+        '<div id="nextButton"><i class="fa fa-chevron-right"></i></div>',
+      );
+      var $exitButton = $(
+        '<div id="exitButton"><i class="fa fa-times"></i></div>',
+      );
 
-function buildGallery(sectionKey) {
-    const galleryElement = document.querySelector(`#${sectionKey}-gallery`);
-    const images = ss1Screenshots[sectionKey];
+      // Add overlay
+      $overlay
+        .append($image)
+        .prepend($prevButton)
+        .append($nextButton)
+        .append($exitButton);
+      $("#gallery").append($overlay);
 
-    galleryElement.innerHTML = ""; // clear existing
+      // Hide overlay on default
+      $overlay.hide();
 
-    images.forEach(src => {
-        const img = document.createElement("img");
-        img.src = src;
-        img.classList.add("gallery-image");
-        img.style.opacity = "0";
-        galleryElement.appendChild(img);
-    });
-}
+      // When an image is clicked
+      $(".img-overlay").click(function (event) {
+        // Prevents default behavior
+        event.preventDefault();
+        // Adds href attribute to variable
+        var imageLocation = $(this).prev().attr("href");
+        // Add the image src to $image
+        $image.attr("src", imageLocation);
+        // Fade in the overlay
+        $overlay.fadeIn("slow");
+      });
 
-function startGalleryCycle(galleryElement, galleryKey) {
-    const images = galleryElement.querySelectorAll(".gallery-image");
-    if (images.length === 0) return;
+      // When the overlay is clicked
+      $overlay.click(function () {
+        // Fade out the overlay
+        $(this).fadeOut("slow");
+      });
 
-    let index = 0;
-
-    images.forEach((img, i) => {
-        img.style.opacity = i === 0 ? "1" : "0";
-    });
-
-    stopGalleryCycle(galleryKey);
-
-    ss1Intervals[galleryKey] = setInterval(() => {
-        const nextIndex = (index + 1) % images.length;
-
-        images[index].style.opacity = "0";
-        images[nextIndex].style.opacity = "1";
-
-        index = nextIndex;
-    }, 3000);
-}
-
-function stopGalleryCycle(galleryKey) {
-    if (ss1Intervals[galleryKey]) {
-        clearInterval(ss1Intervals[galleryKey]);
-        delete ss1Intervals[galleryKey];
-    }
-}
-
-// ------------------------------------------------------
-// 3. Accordion behavior
-// ------------------------------------------------------
-document.querySelectorAll('.ss1-accordion-header').forEach(header => {
-    header.addEventListener('click', () => {
-        const content = header.nextElementSibling;
-        const gallery = content.querySelector(".ss1-gallery");
-        const galleryKey = gallery ? gallery.dataset.gallery : null;
-
-        // Close others
-        document.querySelectorAll('.ss1-accordion-content').forEach(c => {
-            if (c !== content) {
-                c.style.maxHeight = null;
-                c.classList.remove('open');
-
-                const g = c.querySelector(".ss1-gallery");
-                if (g) stopGalleryCycle(g.dataset.gallery);
-            }
-        });
-
-        // Toggle this one
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-            content.classList.remove('open');
-            if (galleryKey) stopGalleryCycle(galleryKey);
+      // When next button is clicked
+      $nextButton.click(function (event) {
+        // Hide the current image
+        $("#overlay img").hide();
+        // Overlay image location
+        var $currentImgSrc = $("#overlay img").attr("src");
+        // Image with matching location of the overlay image
+        var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
+        // Finds the next image
+        var $nextImg = $($currentImg.closest(".image").next().find("img"));
+        // All of the images in the gallery
+        var $images = $("#image-gallery img");
+        // If there is a next image
+        if ($nextImg.length > 0) {
+          // Fade in the next image
+          $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
         } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            content.classList.add('open');
-
-            if (galleryKey) {
-                buildGallery(galleryKey);
-                startGalleryCycle(gallery, galleryKey);
-            }
+          // Otherwise fade in the first image
+          $("#overlay img").attr("src", $($images[0]).attr("src")).fadeIn(800);
         }
-    });
-});
-</script>
+        // Prevents overlay from being hidden
+        event.stopPropagation();
+      });
+
+      // When previous button is clicked
+      $prevButton.click(function (event) {
+        // Hide the current image
+        $("#overlay img").hide();
+        // Overlay image location
+        var $currentImgSrc = $("#overlay img").attr("src");
+        // Image with matching location of the overlay image
+        var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
+        // Finds the next image
+        var $nextImg = $($currentImg.closest(".image").prev().find("img"));
+        // Fade in the next image
+        $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
+        // Prevents overlay from being hidden
+        event.stopPropagation();
+      });
+
+      // When the exit button is clicked
+      $exitButton.click(function () {
+        // Fade out the overlay
+        $("#overlay").fadeOut("slow");
+      });
+    </script>
+<link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+<link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      rel="stylesheet"
+    />
+<script
+      src="https://code.jquery.com/jquery-4.0.0.min.js"
+      integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+      crossorigin="anonymous"
+    ></script>
+<script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
