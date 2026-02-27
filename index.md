@@ -152,10 +152,10 @@
       </button>
       <div class="ss1-accordion-content">
         <div class="screenshot-grid">
-          <img src="./assets/screenshots/fullpage.png" class="thumb" onclick="openModal(this.src)" />
-          <img src="./assets/screenshots/documents1.png" class="thumb" onclick="openModal(this.src)" />
-          <!--<img src="img/residents3.jpg" class="thumb" onclick="openModal(this.src)" />
-          <img src="img/residents4.jpg" class="thumb" onclick="openModal(this.src)" />-->
+          <img src="./assets/screenshots/residents1.png" class="thumb" onclick="openModal(this.src)" />
+          <img src="./assets/screenshots/residents2.png" class="thumb" onclick="openModal(this.src)" />
+          <img src="./assets/screenshots/residents3.png" class="thumb" onclick="openModal(this.src)" />
+          <!--<img src="img/residents4.jpg" class="thumb" onclick="openModal(this.src)" />-->
         </div>
       </div>
     </div>
@@ -167,10 +167,10 @@
 
   <div class="ss1-accordion-content">
     <div class="screenshot-grid">
-      <img src="img/projects1.jpg" class="thumb" onclick="openModal(this.src)">
-      <img src="img/projects2.jpg" class="thumb" onclick="openModal(this.src)">
-      <img src="img/projects3.jpg" class="thumb" onclick="openModal(this.src)">
-      <img src="img/projects4.jpg" class="thumb" onclick="openModal(this.src)">
+      <img src="./assets/screenshots/projects1.png" class="thumb" onclick="openModal(this.src)">
+      <img src="./assets/screenshots/projects2.png" class="thumb" onclick="openModal(this.src)">
+      <!--<img src="img/projects3.jpg" class="thumb" onclick="openModal(this.src)">
+      <img src="img/projects4.jpg" class="thumb" onclick="openModal(this.src)">-->
     </div>
   </div>
 </div>
