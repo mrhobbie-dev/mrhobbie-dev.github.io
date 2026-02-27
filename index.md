@@ -94,6 +94,14 @@
 <section style="padding: 40px 20px; max-width: 900px; margin: auto">
   <h2 style="text-align: center">Key Features</h2>
 
+  <h3>Why Strata Councils Love It</h3>
+    <li>Reduces administrative workload</li>
+    <li>Improves communication and accountability</li>
+    <li>Keeps all council information in one place</li>
+    <li>Easy to learn and simple to maintain</li>
+    <li>Built with long-term clarity and reliability in mind</li>
+  </ul>
+
   <h3>Resident Management</h3>
   <ul>
     <li>Maintain accurate records for owners, tenants, and unit details</li>
@@ -145,7 +153,186 @@
   </ul>
 </section>
 <a id="Screenshots"></a>
+<!-- start -->
+<section style="padding: 50px 20px; max-width: 1200px; margin: auto;">
+  <h2 style="text-align:center;">Screenshots & Preview</h2>
+  <p style="text-align:center; font-size: 1.1rem; color:#555; max-width: 700px; margin: 10px auto 40px;">
+    A closer look at the clean, structured interface that makes Strata Solutions One easy for any council member to use.
+  </p>
 
+  <div style="
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+  ">
+
+    <!-- Screenshot Card 1 -->
+    <div style="
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    "
+    onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.12)';"
+    onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';"
+    >
+      <div style="
+        width: 100%;
+        height: 200px;
+        background: #e0e0e0;
+        border-radius: 8px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:#777;
+        font-size: 1rem;
+      ">
+        Resident Directory (Placeholder)
+      </div>
+      <p style="margin-top: 12px; color:#555; text-align:center;">
+        A clean, searchable list of owners and tenants.
+      </p>
+    </div>
+
+    <!-- Screenshot Card 2 -->
+    <div style="
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    "
+    onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.12)';"
+    onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';"
+    >
+      <div style="
+        width: 100%;
+        height: 200px;
+        background: #e0e0e0;
+        border-radius: 8px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:#777;
+        font-size: 1rem;
+      ">
+        Maintenance Requests (Placeholder)
+      </div>
+      <p style="margin-top: 12px; color:#555; text-align:center;">
+        Track issues, assign tasks, and monitor progress.
+      </p>
+    </div>
+
+    <!-- Screenshot Card 3 -->
+    <div style="
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    "
+    onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.12)';"
+    onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';"
+    >
+      <div style="
+        width: 100%;
+        height: 200px;
+        background: #e0e0e0;
+        border-radius: 8px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:#777;
+        font-size: 1rem;
+      ">
+        Activity Log (Placeholder)
+      </div>
+      <p style="margin-top: 12px; color:#555; text-align:center;">
+        A transparent record of council actions and decisions.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- end -->
+<section style="padding: 50px 20px; max-width: 900px; margin: auto">
+  <h2 style="text-align: center">Interactive Previews</h2>
+  <p
+    style="
+      text-align: center;
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 30px;
+    "
+  >
+    Expand a section to see a rotating preview of the interface.
+  </p>
+  <!-- Accordion Container -->
+  <div class="ss1-accordion">
+    <!-- Accordion Item 1 -->
+    <div class="ss1-accordion-item">
+      <button class="ss1-accordion-header" data-section="residents">
+        Project Tracking
+      </button>
+      <div class="ss1-accordion-content">
+        <div class="ss1-gallery" id="residents-gallery" data-gallery="residents">
+          <!-- This placeholder will be replaced by buildGallery() -->
+        </div>
+      </div>
+    </div>
+    <!-- Accordion Item 2 -->
+    <div class="ss1-accordion-item">
+      <button class="ss1-accordion-header" data-section="projects">
+        Project Tracking
+      </button>
+      <div class="ss1-accordion-content">
+        <div class="ss1-gallery" id="projects-gallery" data-gallery="projects">
+          <!-- This placeholder will be replaced by buildGallery() -->
+        </div>
+      </div>
+    </div>
+    <!-- Accordion Item 3 -->
+    <div class="ss1-accordion-item">
+      <button class="ss1-accordion-header" data-section="activity">
+        Activity & Maintenance Tracking
+      </button>
+      <div class="ss1-accordion-content">
+        <div class="ss1-gallery" id="activity-gallery" data-gallery="activity">
+          <!-- This placeholder will be replaced by buildGallery() -->
+        </div>
+      </div>
+    </div>
+    <!-- Accordion Item 4 -->
+    <div class="ss1-accordion-item">
+      <button class="ss1-accordion-header" data-section="documents">
+        Document Management
+      </button>
+      <div class="ss1-accordion-content">
+        <div
+          class="ss1-gallery"
+          id="documents-gallery"
+          data-gallery="documents"
+        >
+          <!-- This placeholder will be replaced by buildGallery() -->
+        </div>
+      </div>
+    </div>
+    <!-- Accordion Item 5 -->
+    <div class="ss1-accordion-item">
+      <button class="ss1-accordion-header" data-section="forms">
+        Forms & Workflows
+      </button>
+      <div class="ss1-accordion-content">
+        <div class="ss1-gallery" id="forms-gallery" data-gallery="forms">
+          <!-- This placeholder will be replaced by buildGallery() -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <a id="Contact"></a>
 <section id="contact" class="contact-section">
   <h2>Contact</h2>
@@ -169,120 +356,6 @@
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-<script
-  src="https://code.jquery.com/jquery-4.0.0.min.js"
-  integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
-  crossorigin="anonymous"
-></script>
-<script>
-  // Gallery image hover
-  $(".img-wrapper").hover(
-    function () {
-      $(this).find(".img-overlay").animate({ opacity: 1 }, 600);
-    },
-    function () {
-      $(this).find(".img-overlay").animate({ opacity: 0 }, 600);
-    },
-  );
 
-  // Lightbox
-  var $overlay = $('<div id="overlay"></div>');
-  var $image = $("<img>");
-  var $prevButton = $(
-    '<div id="prevButton"><i class="fa fa-chevron-left"></i></div>',
-  );
-  var $nextButton = $(
-    '<div id="nextButton"><i class="fa fa-chevron-right"></i></div>',
-  );
-  var $exitButton = $('<div id="exitButton"><i class="fa fa-times"></i></div>');
 
-  // Add overlay
-  $overlay
-    .append($image)
-    .prepend($prevButton)
-    .append($nextButton)
-    .append($exitButton);
-  $("#gallery").append($overlay);
 
-  // Hide overlay on default
-  $overlay.hide();
-
-  // When an image is clicked
-  $(".img-overlay").click(function (event) {
-    // Prevents default behavior
-    event.preventDefault();
-    // Adds href attribute to variable
-    var imageLocation = $(this).prev().attr("href");
-    // Add the image src to $image
-    $image.attr("src", imageLocation);
-    // Fade in the overlay
-    $overlay.fadeIn("slow");
-  });
-
-  // When the overlay is clicked
-  $overlay.click(function () {
-    // Fade out the overlay
-    $(this).fadeOut("slow");
-  });
-
-  // When next button is clicked
-  $nextButton.click(function (event) {
-    // Hide the current image
-    $("#overlay img").hide();
-    // Overlay image location
-    var $currentImgSrc = $("#overlay img").attr("src");
-    // Image with matching location of the overlay image
-    var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
-    // Finds the next image
-    var $nextImg = $($currentImg.closest(".image").next().find("img"));
-    // All of the images in the gallery
-    var $images = $("#image-gallery img");
-    // If there is a next image
-    if ($nextImg.length > 0) {
-      // Fade in the next image
-      $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
-    } else {
-      // Otherwise fade in the first image
-      $("#overlay img").attr("src", $($images[0]).attr("src")).fadeIn(800);
-    }
-    // Prevents overlay from being hidden
-    event.stopPropagation();
-  });
-
-  // When previous button is clicked
-  $prevButton.click(function (event) {
-    // Hide the current image
-    $("#overlay img").hide();
-    // Overlay image location
-    var $currentImgSrc = $("#overlay img").attr("src");
-    // Image with matching location of the overlay image
-    var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
-    // Finds the next image
-    var $nextImg = $($currentImg.closest(".image").prev().find("img"));
-    // Fade in the next image
-    $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
-    // Prevents overlay from being hidden
-    event.stopPropagation();
-  });
-
-  // When the exit button is clicked
-  $exitButton.click(function () {
-    // Fade out the overlay
-    $("#overlay").fadeOut("slow");
-  });
-</script>
-<link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-  crossorigin="anonymous"
-/>
-<link
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-  rel="stylesheet"
-/>
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-  crossorigin="anonymous"
-></script>
