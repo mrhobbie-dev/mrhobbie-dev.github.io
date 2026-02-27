@@ -153,111 +153,7 @@
   </ul>
 </section>
 <a id="Screenshots"></a>
-<!-- start -->
-<section style="padding: 50px 20px; max-width: 1200px; margin: auto;">
-  <h2 style="text-align:center;">Screenshots & Preview</h2>
-  <p style="text-align:center; font-size: 1.1rem; color:#555; max-width: 700px; margin: 10px auto 40px;">
-    A closer look at the clean, structured interface that makes Strata Solutions One easy for any council member to use.
-  </p>
 
-  <div style="
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-  ">
-
-    <!-- Screenshot Card 1 -->
-    <div style="
-      background: white;
-      border-radius: 12px;
-      padding: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      transition: transform 0.2s, box-shadow 0.2s;
-    "
-    onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.12)';"
-    onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';"
-    >
-      <div style="
-        width: 100%;
-        height: 200px;
-        background: #e0e0e0;
-        border-radius: 8px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        color:#777;
-        font-size: 1rem;
-      ">
-        Resident Directory (Placeholder)
-      </div>
-      <p style="margin-top: 12px; color:#555; text-align:center;">
-        A clean, searchable list of owners and tenants.
-      </p>
-    </div>
-
-    <!-- Screenshot Card 2 -->
-    <div style="
-      background: white;
-      border-radius: 12px;
-      padding: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      transition: transform 0.2s, box-shadow 0.2s;
-    "
-    onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.12)';"
-    onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';"
-    >
-      <div style="
-        width: 100%;
-        height: 200px;
-        background: #e0e0e0;
-        border-radius: 8px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        color:#777;
-        font-size: 1rem;
-      ">
-        Maintenance Requests (Placeholder)
-      </div>
-      <p style="margin-top: 12px; color:#555; text-align:center;">
-        Track issues, assign tasks, and monitor progress.
-      </p>
-    </div>
-
-    <!-- Screenshot Card 3 -->
-    <div style="
-      background: white;
-      border-radius: 12px;
-      padding: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      transition: transform 0.2s, box-shadow 0.2s;
-    "
-    onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.12)';"
-    onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';"
-    >
-      <div style="
-        width: 100%;
-        height: 200px;
-        background: #e0e0e0;
-        border-radius: 8px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        color:#777;
-        font-size: 1rem;
-      ">
-        Activity Log (Placeholder)
-      </div>
-      <p style="margin-top: 12px; color:#555; text-align:center;">
-        A transparent record of council actions and decisions.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- end -->
 <section style="padding: 50px 20px; max-width: 900px; margin: auto">
   <h2 style="text-align: center">Interactive Previews</h2>
   <p
@@ -355,6 +251,30 @@
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script>
+document.querySelectorAll('.ss1-accordion-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const content = header.nextElementSibling;
+
+    // Close others
+    document.querySelectorAll('.ss1-accordion-content').forEach(c => {
+      if (c !== content) {
+        c.style.maxHeight = null;
+        c.classList.remove('open');
+      }
+    });
+
+    // Toggle this one
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      content.classList.remove('open');
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      content.classList.add('open');
+    }
+  });
+});
 </script>
 
 
