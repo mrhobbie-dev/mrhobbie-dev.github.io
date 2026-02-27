@@ -182,8 +182,8 @@
       </button>
       <div class="ss1-accordion-content">
     <div class="screenshot-grid">
-      <img src="./assets/screenshots/projects1.png" class="thumb" onclick="openModal(this.src)">
-      <img src="./assets/screenshots/projects2.png" class="thumb" onclick="openModal(this.src)">
+      <img src="./assets/screenshots/activity1.png" class="thumb" onclick="openModal(this.src)">
+      <img src="./assets/screenshots/activity2.png" class="thumb" onclick="openModal(this.src)">
       <!--<img src="img/projects3.jpg" class="thumb" onclick="openModal(this.src)">
       <img src="img/projects4.jpg" class="thumb" onclick="openModal(this.src)">-->
     </div>
@@ -194,8 +194,8 @@
       <button class="ss1-accordion-header" data-section="documents">Document Management</button>
       <div class="ss1-accordion-content">
     <div class="screenshot-grid">
-      <img src="./assets/screenshots/activity1.png" class="thumb" onclick="openModal(this.src)">
-      <img src="./assets/screenshots/activity2.png" class="thumb" onclick="openModal(this.src)">
+      <img src="./assets/screenshots/documents1.png" class="thumb" onclick="openModal(this.src)">
+      <img src="./assets/screenshots/documents2.png" class="thumb" onclick="openModal(this.src)">
       <!--<img src="img/projects3.jpg" class="thumb" onclick="openModal(this.src)">
       <img src="img/projects4.jpg" class="thumb" onclick="openModal(this.src)">-->
     </div>
@@ -205,11 +205,12 @@
     <div class="ss1-accordion-item">
       <button class="ss1-accordion-header" data-section="forms">Forms & Workflows</button>
       <div class="ss1-accordion-content">
+      <h6>A sample of available forms</h6>
     <div class="screenshot-grid">
-      <img src="./assets/screenshots/projects1.png" class="thumb" onclick="openModal(this.src)">
-      <img src="./assets/screenshots/projects2.png" class="thumb" onclick="openModal(this.src)">
-      <!--<img src="img/projects3.jpg" class="thumb" onclick="openModal(this.src)">
-      <img src="img/projects4.jpg" class="thumb" onclick="openModal(this.src)">-->
+      <img src="./assets/screenshots/forms1.png" class="thumb" onclick="openModal(this.src)">
+      <img src="./assets/screenshots/forms2.png" class="thumb" onclick="openModal(this.src)">
+      <img src="./assets/screenshots/forms3.png" class="thumb" onclick="openModal(this.src)">
+      <img src="./assets/screenshots/forms4.png" class="thumb" onclick="openModal(this.src)">
     </div>
       </div>
     </div>
