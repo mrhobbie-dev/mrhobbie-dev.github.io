@@ -142,7 +142,7 @@
 <section style="padding: 50px 20px; max-width: 900px; margin: auto">
   <h2 style="text-align: center">Interactive Previews</h2>
   <p style="text-align: center; font-size: 1.5rem; color: #555; margin-bottom: 30px">
-    Expand a section to see a rotating preview of the interface. Click on the image to enlarge.
+    Expand a section to see a rotating preview of the interface.<br>Click on the image to enlarge.
   </p>
   <!-- Accordion Container -->
   <div class="ss1-accordion">
@@ -205,7 +205,7 @@
     <div class="ss1-accordion-item">
       <button class="ss1-accordion-header" data-section="forms">Forms & Workflows</button>
       <div class="ss1-accordion-content">
-      <h6>A sample of available forms</h6>
+      <h3>A sample of available forms</h3>
     <div class="screenshot-grid">
       <img src="./assets/screenshots/forms1.png" class="thumb" onclick="openModal(this.src)">
       <img src="./assets/screenshots/forms2.png" class="thumb" onclick="openModal(this.src)">
