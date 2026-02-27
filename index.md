@@ -146,7 +146,7 @@
   <div class="ss1-accordion">
     <!-- Accordion Item 1 -->
     <div class="ss1-accordion-item">
-      <button class="ss1-accordion-header main-content" data-section="residents">
+      <button class="ss1-accordion-header" data-section="residents">
         Owner & Resident Information
       </button>
       <div class="ss1-accordion-content">
