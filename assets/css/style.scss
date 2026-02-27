@@ -12,6 +12,9 @@
 .skip-to-content {
   display: none !important;
 }
+#skip-to-content {
+  visibility: hidden;
+}
 
 html {
   scroll-behavior: smooth;

@@ -130,9 +130,25 @@
           Resident Management
         </button>
         <div class="ss1-accordion-content">
-          <div class="ss1-gallery" id="residents-gallery" data-gallery="residents">
-            <!-- This placeholder will be replaced by buildGallery() -->
-          </div>
+        <!-- added new gallery -->
+       <div class="container">
+        <div id="image-gallery">
+          <div class="row">
+            <h6>A sample of available FORMS</h6>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+              <div class="img-wrapper">
+                <a href="./assets/screenshots/fullpage.png"
+                  ><img src="./assets/screenshots/fullpage.png" class="img-responsive"
+                /></a>
+                <div class="img-overlay">
+                  <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        <!-- end -->
         </div>
       </div>
       <!-- Accordion Item 2 -->
