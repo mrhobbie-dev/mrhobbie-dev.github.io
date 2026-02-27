@@ -148,13 +148,12 @@
       <button class="ss1-accordion-header" data-section="residents">
         Owner & Resident Information
       </button>
-
       <div class="ss1-accordion-content">
         <div class="screenshot-grid">
-          <img src="img/residents1.jpg" class="thumb" onclick="openModal(this.src)" />
-          <img src="img/residents2.jpg" class="thumb" onclick="openModal(this.src)" />
-          <img src="img/residents3.jpg" class="thumb" onclick="openModal(this.src)" />
-          <img src="img/residents4.jpg" class="thumb" onclick="openModal(this.src)" />
+          <img src="./assets/screenshots/fullpage.png" class="thumb" onclick="openModal(this.src)" />
+          <img src="./assets/screenshots/documents1.png" class="thumb" onclick="openModal(this.src)" />
+          <!--<img src="img/residents3.jpg" class="thumb" onclick="openModal(this.src)" />
+          <img src="img/residents4.jpg" class="thumb" onclick="openModal(this.src)" />-->
         </div>
       </div>
     </div>
