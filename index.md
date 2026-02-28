@@ -140,7 +140,7 @@
 <section style="padding: 50px 20px; max-width: 900px; margin: auto">
   <h2 style="text-align: center">Interactive Previews</h2>
   <p style="text-align: center; font-size: 1.5rem; color: #555; margin-bottom: 30px">
-    Expand a section to see a rotating preview of the interface.<br>Click on the image to enlarge.
+    Expand a section to see a preview of the application.<br>Click on the image to enlarge.
   </p>
   <!-- Accordion Container -->
   <div class="ss1-accordion">
