@@ -203,7 +203,7 @@
     <div class="ss1-accordion-item">
       <button class="ss1-accordion-header" data-section="forms">Forms & Workflows</button>
       <div class="ss1-accordion-content">
-      <h3>A sample of available forms</h3>
+      <h5>A sample of available forms</h5>
     <div class="screenshot-grid">
       <img src="./assets/screenshots/forms1.png" class="thumb" onclick="openModal(this.src)">
       <img src="./assets/screenshots/forms2.png" class="thumb" onclick="openModal(this.src)">
